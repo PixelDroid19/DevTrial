@@ -1,3 +1,21 @@
+# Demo
+[Live demo](https://pixeldroid19.github.io/multi-proyectos-app/)
+
+<table>
+  <tr>
+    <td >
+      <img style="width: 300px;" src="https://user-images.githubusercontent.com/86851423/234981901-0d512f4b-4d75-4beb-88ef-2d72d867f4a4.png" style="width: 100%;">
+    </td>
+      <td >
+      <img style="width: 300px;" src="https://user-images.githubusercontent.com/86851423/234982023-73cc3b87-ee33-4232-9ba6-13b4e324631a.png" style="width: 100%;">
+    </td>
+     <td>
+      <img style="width: 400px;"  src="https://user-images.githubusercontent.com/86851423/234982155-2bdfaf9d-a30c-4a25-92e4-22b180f52e77.png" style="width: 100%;">
+    </td>
+  </tr>
+</table>
+
+
 ## Project Specifications
 
 ### 1- Crear una aplicación de presentación de diapositivas básica
@@ -46,20 +64,3 @@ Necesitarás tener Node.js instalado en tu máquina de desarrollo local.
 2. Visita <http://localhost:3000>
 3. ¡Disfruta! :)
 
-
-# Demo
-[Live demo](https://pixeldroid19.github.io/multi-proyectos-app/)
-
-<table>
-  <tr>
-    <td >
-      <img style="width: 300px;" src="https://user-images.githubusercontent.com/86851423/234981901-0d512f4b-4d75-4beb-88ef-2d72d867f4a4.png" style="width: 100%;">
-    </td>
-      <td >
-      <img style="width: 300px;" src="https://user-images.githubusercontent.com/86851423/234982023-73cc3b87-ee33-4232-9ba6-13b4e324631a.png" style="width: 100%;">
-    </td>
-     <td>
-      <img style="width: 400px;"  src="https://user-images.githubusercontent.com/86851423/234982155-2bdfaf9d-a30c-4a25-92e4-22b180f52e77.png" style="width: 100%;">
-    </td>
-  </tr>
-</table>
