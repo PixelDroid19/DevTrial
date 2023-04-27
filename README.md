@@ -54,7 +54,7 @@
 
 Necesitarás tener Node.js instalado en tu máquina de desarrollo local.
 
-1. Instala Node Js: Página de descarga de Node
+1. Instala Node Js: <https://nodejs.org/>
 2. Clona el repositorio
 3. Ejecuta $ npm install o yarn para instalar las dependencias
 
