@@ -1,6 +1,7 @@
 import React from 'react'
 import { useFetch } from '../hook/useFetch'
 import { useCatImage } from '../hook/useCatImage'
+import { Spinner } from './spinner'
 const CAT_ENDPOINT_RANDOM_FACT = 'https://catfact.ninja/fact'
 
 
@@ -12,7 +13,7 @@ export const ViewCat = () => {
         handleRefetch
     } = useFetch(CAT_ENDPOINT_RANDOM_FACT)
 
-    const { imageUrl } = useCatImage({ fact })
+    const { imageUrl, loading } = useCatImage({ fact })
 
 
 
@@ -28,13 +29,12 @@ export const ViewCat = () => {
                     data-testid='button-prev'
                     className='small '
                 >
-                    Get new fact
+                 {loading ? <Spinner /> : 'Get new fact'}
                 </button>
             </div>
 
             <div id='slide' className='card text-center card2'>
-
-                {imageUrl && fact && <img src={imageUrl} alt={`Image extracted using the first rhee words for ${fact?.fact}`} />}
+                {imageUrl && fact && <img className='Cat-img ' src={imageUrl} alt={`Image extracted using the first rhee words for ${fact?.fact}`} />}
             </div>
         </div>
     )

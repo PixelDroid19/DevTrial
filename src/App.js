@@ -20,7 +20,7 @@ const App = () => {
         <Route exact path="/" element={<Slides dataSlides={SLIDES} />} />
         <Route path="/point_two" element={<Articles dataArticle={ARTICLES} />} />
         <Route path="/point_three" element={<ViewCat />} />
-        <Route path="*" element={<Slides />} />
+        <Route path="*" element={<Slides dataSlides={SLIDES}/>} />
       </Routes>
     </BrowserRouter>
   )

@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 
 function Articles({ dataArticle }) {
     const [articles, setArticles] = useState(dataArticle);
+    const [orderBy, setOrderBy] = useState('top')
     const [sortOrder, setSortOrder] = useState([]);
 
     const sortArticles = (criterion) => {
+        setOrderBy(criterion)
         let sortedArticles = [];
 
         if (criterion === 'discounted') {
@@ -31,17 +33,17 @@ function Articles({ dataArticle }) {
         <div>
             <div className="layout-row align-items-center justify-content-center my-20 navigation">
                 <label className="form-hint mb-0 text-uppercase font-weight-light">Ordenar por</label>
-                <button data-testid="most-upvoted-link" onClick={() => sortArticles('top')} className="small">Más votados</button>
-                <button data-testid="most-recent-link" onClick={() => sortArticles('discounted')} className="small">Con descuento</button>
+                <button data-testid="most-upvoted-link" onClick={() => sortArticles('top')} className={orderBy === 'top' ? 'small btn-disable' : "small"}>Más votados</button>
+                <button data-testid="most-recent-link" onClick={() => sortArticles('discounted')} className={orderBy === 'discounted' ? 'small btn-disable' : "small"}>Con descuento</button>
             </div>
 
             <div className="card w-50 mx-auto">
                 <table>
                     <thead>
                         <tr>
-                            <th> Articulo </th>
-                            <th> votos a favor</th>
-                            <th> fecha </th>
+                            <th> Artículo </th>
+                            <th> Votos a favor</th>
+                            <th> Fecha </th>
                         </tr>
                     </thead>
                     {
