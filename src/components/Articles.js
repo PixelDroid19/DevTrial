@@ -33,8 +33,8 @@ function Articles({ dataArticle }) {
         <div>
             <div className="layout-row align-items-center justify-content-center my-20 navigation">
                 <label className="form-hint mb-0 text-uppercase font-weight-light">Ordenar por</label>
-                <button data-testid="most-upvoted-link" onClick={() => sortArticles('top')} className={orderBy === 'top' ? 'small btn-disable' : "small"}>Más votados</button>
-                <button data-testid="most-recent-link" onClick={() => sortArticles('discounted')} className={orderBy === 'discounted' ? 'small btn-disable' : "small"}>Con descuento</button>
+                <button data-testid="most-upvoted-link" onClick={() => sortArticles('top')} className={orderBy === 'top' ? 'small disabled' : "small"}>Más votados</button>
+                <button data-testid="most-recent-link" onClick={() => sortArticles('discounted')} className={orderBy === 'discounted' ? 'small disabled' : "small"}>Con descuento</button>
             </div>
 
             <div className="card w-50 mx-auto">
