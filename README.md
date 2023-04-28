@@ -1,5 +1,8 @@
 ## Project Specifications
 
+# Demo
+[Live demo](https://pixeldroid19.github.io/multi-proyectos-app/)
+
 ### 1- Crear una aplicación de presentación de diapositivas básica
 
 - El componente 'Slides' toma una serie de diapositivas. Cada elemento de esta matriz denota una sola diapositiva y es un objeto con 2 propiedades: title y text.
@@ -32,5 +35,16 @@
 - mostrar imagen random (src): <https://cataas.com${url>}
 - documentacion: <https://cataas.com/#/>
 
-# Demo
-[Live demo](https://pixeldroid19.github.io/multi-proyectos-app/)
+## Configuración
+
+Necesitarás tener Node.js instalado en tu máquina de desarrollo local.
+
+1. Instala Node Js: Página de descarga de Node
+2. Clona el repositorio
+3. Ejecuta $ npm install o yarn para instalar las dependencias
+
+## Puesta en marcha
+
+1. Ejecuta $ npm run start o yarn start
+2. Visita <http://localhost:3000>
+3. ¡Disfruta! :)
