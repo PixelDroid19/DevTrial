@@ -5,6 +5,9 @@
 .text-center{
   margin: auto
 }
+.hidden{
+  display: none;
+}
 
 .App {
   max-width: 600px;
